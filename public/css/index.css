@@ -1,0 +1,249 @@
+body {
+  background: #FFFFE0;
+}
+
+  /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+
+/*modal box*/
+
+.bg-modal {
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center; }
+  
+  
+.bg-modal .close {
+  position: absolute;
+  font-size: 3rem;
+　right: 1rem;
+  top: 0, 5rem;
+  transform: rotate(45deg);
+  cursor: pointer; }
+      
+      
+.box{
+  display: grid¥;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5rem;
+  width: 50%;
+  background-color: white;
+  position: relative; 
+ }
+ 
+ /*html1について*/
+.header {
+  height: 100px;
+  width:100%;
+  gackgroud: #E9967A;
+}
+.splet-boxes {
+  margin-top: 350px;
+}
+
+.left-box {
+  margin-left:5%;
+  font-size: 80px;
+  float: left;
+  width:40%;
+  text-align: center;
+  height: 600px;
+  line-height: 600px;
+  cursor: pointer;
+}
+p {
+  font-weight: bold;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.right-box {
+  margin-right:5%;
+  font-size: 80px;
+  float: right;
+  width:40%;
+  text-align: center;
+  height: 600px;
+  line-height: 600px;
+  cursor: pointer;
+}
+.left-box p:hover {
+  background: #FF0000;
+  opacity: 0.7;
+}
+.right-box p:hover {
+  background: #66FF99;
+  opacity: 0.7;
+}
+
+
+/*html２について*/
+.select-skill {
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+}
+li > input {
+  position:relative;
+   width: 50px;
+   height:50px;
+  float: left;
+  margin: 50px 40px 0 20px;
+  transform:scale(1.5);
+}
+
+.scrollWrap {
+  width: 100%;
+  margin: 0px auto; 
+  overflow: auto;
+}
+.scrollContent ul {
+  margin-top: 50px;
+  list-style: none;
+  background: white;
+  padding: 0;
+  position: relative;
+}
+.scrollContent ul li {
+  margin-bottom: 30px;
+  font-size: 30px;
+  height: 150px;
+  line-height: 150px;
+  border:1px solid black;
+  border-left: solid 6px #2d8fdd;
+  position: relative;
+}
+.selected {
+  background: #FFDDFF;
+  opacity: 0.5;
+}
+/*スクロールバーの幅*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+/*スクロールバーのレール*/
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background: #eee;
+}
+/*スクロールバーのつまみ*/
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #81D4FA;
+}
+
+a {
+  text-decoration: none;
+}
+
+#decide {
+  margin:50px auto 100px;
+  font-size: 60px;
+  width: 600px;
+  height:100px;
+  text-align: center;
+  border: 1px solid black;
+  display: block;
+  color: white;
+  background: #808080;
+  opacity: 0.7;
+　font-size: 70px;
+　border-radius: 10px;
+　text-align: center;
+　line-height: 100px;
+}
+
+
+/*html3について*/
+h2 {
+  text-align: center;
+  font-size: 100px;
+}
+.loading {
+  margin-top: 300px;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  transition: .4s;
+}
+.wait {
+  margin-top: 0;
+}
+.thanks {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  transition: .4s;
+}
+
+.container{
+    margin: 0 auto;
+    text-align:center;
+}
+.can {
+  margin-top: 300px;
+}
+
+#loading{
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+}
+
+.go {
+  margin:50px auto 100px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 50px;
+  border:1px solid black;
+  border-radius: 5px;
+  display: block;
+  color:white;
+  background: #808080;
+  width:600px;
+  height: 100px;
+  line-height: 100px;
+  opacity: 0.7;
+}
+
+
+/*direction button for map page*/
+
+#map{
+  position: fixed;
+  z-index:0;
+}
+.direction-button{
+  font-size: 20px;
+  position: relative;
+  color: white;
+  bottom: 60px;
+  left: 20px;
+  z-index:10;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(0,113,188);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
