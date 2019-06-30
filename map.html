@@ -42,8 +42,7 @@
        var myIcon = {
         url: '/images/me.svg',
         // This marker is 20 pixels wide by 32 pixels high.
-        scaledSize: new google.maps.Size(40, 40),
-        anchor: new google.maps.Point(-20, 0)
+        scaledSize: new google.maps.Size(40, 40)
       };
       
       
@@ -99,7 +98,7 @@
       let responder3 = new Responder('Laura', {lat:35.667386, lng:139.757487}, 'info');
       let responder4 = new Responder('Laura', {lat:35.692136, lng:139.780489}, 'info');
       
-      let me = new Me('Me', {lat:35.694035, lng:139.738604}, 'info');
+      let me = new Me('Me', {lat:35.692962, lng:139.738867}, 'info');
       
       let DISASTERS = [fire, earthquake];
       let VICTIMS = [victim1, victim2,victim3,victim4];
@@ -212,16 +211,16 @@
           let info = '<div id="content">'+
             '<div id="'+ marker.id + '">'+
             '</div>'+
-            '<h1>'+ marker.title +'</h1>'+  
+            '<p class="name">'+ marker.title +'</p>'+  
             '<div id="bodyContent">'+
-            '<p>This fire appeared at 18:00 on July 22, 2019 at Fire Jerry. It was super scary.</p>'+
+            '<p>Condition: Stuck under debris</p> <p>Severity: Mild</p> <p>Incident Report Time: 2019-06-29-18:53.47</p>'
             '<input type="button" onclick="map.setCenter({lat:' + marker.position['lat'] + ', lng:' + marker.position['lng'] + '})"/>' +
             '</div>'+
             '</div>';
           
           let infowindow = new google.maps.InfoWindow({
             content: info,
-            maxWidth: 300
+            maxWidth: 500
           });
           
           infowindow.open(map, marker);

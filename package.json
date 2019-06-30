@@ -10,6 +10,7 @@
   "author": "Kitti, Angel, Murasawa",
   "license": "MIT",
   "dependencies": {
+    "aws-amplify": "^1.1.29",
     "express": "^4.17.1",
     "nodemon": "^1.19.1"
   }
